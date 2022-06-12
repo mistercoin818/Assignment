@@ -6,4 +6,5 @@ int request2;
 
 int main(){
   printf("Hello World!\n");
+  printf("New Hello World!\n");
 }
