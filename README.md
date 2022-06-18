@@ -1,4 +1,4 @@
-# Assignment1
+# Assignment
 
 ## 성균관 2022 여름 - 깃허브 + 데브옵스 수업
 
