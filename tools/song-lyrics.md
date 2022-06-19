@@ -1,2 +1,4 @@
 # 제목 악어떼
 
+![악어떼 그림](./cover_crocodile.jpg)
+
