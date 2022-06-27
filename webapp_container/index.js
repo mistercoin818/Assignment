@@ -13,7 +13,7 @@ server.listen(3000, function()  {
     console.log("HTTP를 포트 3000에 오픈합니다")
 })
 
-//index.js is just like main program
+//index.js은 마치 메인 프로그램 같은 것
 
 // npm install
 // npm start
