@@ -16,7 +16,7 @@ echo "![악어떼 그림](./cover_crocodile.jpg)" >> $FILE
 
 git add $FILE && git commit -m "그림"
 
-echo "정글숲을 지나서 가자" >> $FILE
+echo "정글숲을 지나서 가자!!!" >> $FILE
 
 git add $FILE && git commit -m "첫 악어떼 노래"
 
