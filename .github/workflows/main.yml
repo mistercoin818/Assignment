@@ -20,7 +20,7 @@ jobs:
           username: root
 
           script: |
-              cd ~/ASSIGNMENT
-              git pull
-              npm i
-              pm2 restart all
+                cd ~/ASSIGNMENT
+                git pull
+                npm i
+                pm2 restart all
