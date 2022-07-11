@@ -1,8 +1,10 @@
 name: Sample_Python_Action1
 
 on:
+  push:
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
