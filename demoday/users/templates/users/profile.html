@@ -1,0 +1,60 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+
+
+
+  <div class="flex flex-row justify-center max-w-xl md:mx-auto  md:px-4 md:py-4">
+    <div class="w-full bg-white shadow-md my-2 p-2 md:p-4 rounded-lg">
+      <div class="flex items-center shadow-md">
+        <img class="w-full h-28 md:h-56 object-cover object-center rounded" src="{{ user.profile.cover.url }}" alt="avatar">
+      </div>
+      <div class="flex justify-center -mt-12">
+        <img src="{{ user.profile.image.url }}" class="h-32 w-32 rounded-full mx-auto shadow-md">
+      </div>
+      <div class="text-center px-3 pb-6 pt-2">
+        <a href="{% url "user-posts" user.username %}"><h1 class="hover:text-blue-600 text-black text-2xl font-semibold font-sans">{{ user.profile.username }}</h1></a>
+        <p class="mt-2 font-sans font-light text-grey-dark">{{ user.profile.about|safe }}</p>
+      </div>
+
+      <div class="flex justify-center pb-6 text-grey-dark">
+      <div class="text-center mr-3 border-r pr-3">
+        <a href="{{ user.profile.github }}" target="_blank"><img class="h-6 w-6" src="../../media/038-github.png" alt="{{ user.username }}'s Github"></a>
+      </div>
+      <div class="text-center mr-3 border-r pr-3">
+        <a href="{{ user.profile.linkedin }}" target="_blank"><img class="h-6 w-6" src="../../media/045-linkedin.png" alt="{{ user.username }}'s LinkedIn"></a>
+      </div>
+      <div class="text-center mr-3 border-r pr-3">
+        <a href="{{ user.profile.twitter }}" target="_blank"><img class="h-6 w-6" src="../../media/043-twitter.png" alt="{{ user.username }}'s Twitter"></a>
+      </div>
+
+      <div class="text-center">
+        <a href="{{ user.profile.instagram }}" target="_blank"><img class="h-6 w-6" src="../../media/025-instagram.png" alt="{{ user.username }}'s Instagram"></a>
+      </div>
+  	</div>
+
+
+      <form class="px-4 md:px-6 pt-6 mb-4 md:w-full leading-loose font-semibold text-sm bg-gray-200 rounded " method="POST" , enctype="multipart/form-data">
+        <p class="text-black text-base text-center font-bold font-sans">Update your info</p>
+          <hr class="m-3 border-white" />
+          <span class="w-full text-black text-xs font-sans">
+        {% csrf_token %}
+
+        {{ u_form|crispy }}
+
+        {{ p_form|crispy }}
+        </span>
+        <div class="p-6 text-center">
+          <button class="w-full p-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline" type="submit">
+            <a href="#">Update</a </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+{% endblock content %}
