@@ -1,142 +1,68 @@
-# { MUB : Multi User Blog }
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-**MUB** is a multi-user blog web app using the Python - Django infrastructure. It's works right now, however, I'm planning to add more features in the future. So, if you want to be informed, you can follow and/or give the star to the project.
+## Available Scripts
 
-Don't you like reading codes? You can also test [**MUBapp**](https://mubapp.herokuapp.com/) on Heroku.
+In the project directory, you can run:
 
+### `npm start`
 
-<br>
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-<sub>P.S. The post images, titles and summaries is taken from various Medium content for creating dummy data. If you want to read any post just search on Medium with the title.</sub>
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
-<br>
+### `npm test`
 
-----
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Features
+### `npm run build`
 
-<br>
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-![](media/mubapp.gif)
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
 
-<br>
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-* Multi user blogging system
-* User profile card
-* Auto-slug url by post title
-* Post listing by user
-* Post listing by category
-* Related posts by category
-* Image uploading
-* Pagination
-* Email backend
-* User register
-* User login / logout
-* User password reset
-* User post form on frontend
-* Updatable user profile
-* Rich text editor for new and update post
-* Post create, update and delete on frontend
-* Clean and responsive design with TailwindCSS
-* SEO friendly meta tags system
-* Social share buttons
+### `npm run eject`
 
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-<br>
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-----
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-### Requirements
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-```
-asgiref==3.2.7
-Django==3.0.5
-django-ckeditor==5.9.0
-django-crispy-forms==1.9.0
-django-js-asset==1.2.2
-gunicorn==20.0.4
-Pillow==7.1.2
-psycopg2-binary==2.8.5
-python-dotenv==0.13.0
-pytz==2020.1
-sqlparse==0.3.1
-whitenoise==5.0.1
-```
+## Learn More
 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-<br>
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-----
+### Code Splitting
 
-### Project Tree
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-```
-├── mubapp
-    ├── Procfile
-    ├── README.md
-    ├── blog
-    │   ├── __init__.py
-    │   ├── __pycache__
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── migrations
-    │   ├── models.py
-    │   ├── static
-    │   │   └── blog
-    │   ├── templates
-    │   │   └── blog
-    │   │       ├── about.html
-    │   │       ├── base.html
-    │   │       ├── category_posts.html
-    │   │       ├── home.html
-    │   │       ├── post_confirm_delete.html
-    │   │       ├── post_detail.html
-    │   │       ├── post_form.html
-    │   │       └── user_posts.html
-    │   ├── tests.py
-    │   ├── urls.py
-    │   └── views.py
-    ├── db.sqlite3
-    ├── manage.py
-    ├── media
-    │   ├── cover_pics
-    │   ├── images
-    │   ├── profile_pics
-    │   └── uploads
-    ├── mubapp
-    │   ├── __init__.py
-    │   ├── __pycache__
-    │   ├── asgi.py
-    │   ├── settings.py
-    │   ├── urls.py
-    │   └── wsgi.py
-    ├── requirements.txt
-    ├── staticfiles
-    │   ├── admin
-    │   │   ├── css
-    │   │   ├── fonts
-    │   │   ├── img
-    │   │   └── js
-    │   └── ckeditor
-    └── users
-      ├── __init__.py
-      ├── __pycache__
-      ├── admin.py
-      ├── apps.py
-      ├── forms.py
-      ├── migrations
-      ├── models.py
-      ├── signals.py
-      ├── templates
-      │   └── users
-      │       ├── login.html
-      │       ├── logout.html
-      │       ├── password_reset.html
-      │       ├── password_reset_complete.html
-      │       ├── password_reset_confirm.html
-      │       ├── password_reset_done.html
-      │       ├── profile.html
-      │       └── register.html
-      ├── tests.py
-      └── views.py
-```
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
