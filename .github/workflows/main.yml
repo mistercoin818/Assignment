@@ -1,0 +1,26 @@
+name: Deploy to DigitalOcean Droplet
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy web app
+    runs-on: ubuntu-latest
+    container: node:12
+    steps:
+      - name: Digital Ocean Ubuntu Commands
+        uses: appleboy/ssh-action@v0.1.2
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          username: root
+
+          script: |
+              cd ~/ASSIGNMENT
+              git pull
+              npm i
+              pm2 restart all
