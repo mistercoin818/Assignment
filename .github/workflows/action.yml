@@ -17,4 +17,4 @@ jobs:
         python-version: 3.7
     - name: Run Python
       run: |
-        python3 ./scripts/hello.py
+        python3 ./scripts/hello_action.py
