@@ -2,7 +2,7 @@ name: Sample_Python_Action1
 
 on:
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
