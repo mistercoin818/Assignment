@@ -21,7 +21,7 @@ jobs:
           username: root
 
           script: |
-                cd ~/ASSIGNMENT
+                cd ~/Assignment
                 git pull
                 npm i
                 pm2 restart all
