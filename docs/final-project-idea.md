@@ -8,7 +8,9 @@ Github Action
 
 ### 설명
 
-
+DevOps에서 가장 중요한 목적 중 하나가 CI/CD 구축이라고 하여 이를 경험해보고 싶어 선택하게 되었다.
+main branch에 push를 하게 되면 cloud server에서 자동으로 업데이트 된 코드를 배포하도록 하는 github action을 만든다.
+오픈소스 react 프로젝트를 배포한다.
 
 ### 필요 기술 스택
 
@@ -27,4 +29,4 @@ pull request를 받을 때 Github GUI에 굳이 들어가지 않고 CLI에서 co
 
 ### 필요 기술 스택
 
-Shell script
+Shell
